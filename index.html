@@ -97,6 +97,15 @@
       .brand {
         display: inline-flex;
         align-items: center;
+        gap: 10px;
+      }
+
+      .brand-name {
+        font-family: var(--serif);
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        white-space: nowrap;
       }
 
       .brand-logo {
@@ -1023,6 +1032,10 @@
           height: 62px;
         }
 
+        .site-header .brand-name {
+          font-size: 13px;
+        }
+
         .menu-toggle {
           display: grid;
           place-items: center;
@@ -1317,7 +1330,8 @@
             </div>
             <header className="site-header">
               <a className="brand" href="#home" onClick={closeMenu} aria-label="Aagam Tattoo Studio home">
-                <img className="brand-logo" src="./aagam-logo.png" alt="Aagam Tattoo Studio" />
+                <img className="brand-logo" src="./aagam-logo.png" alt="" />
+                <span className="brand-name">Aagam Tattoo Studio</span>
               </a>
               <button
                 className="menu-toggle"
@@ -1504,7 +1518,8 @@
 
             <footer>
               <a className="brand" href="#home">
-                <img className="brand-logo" src="./aagam-logo.png" alt="Aagam Tattoo Studio" />
+                <img className="brand-logo" src="./aagam-logo.png" alt="" />
+                <span className="brand-name">Aagam Tattoo Studio</span>
               </a>
               <p className="footer-note">Thoughtful tattoos. Made with care. © {new Date().getFullYear()} Aagam Tattoo Studio</p>
               <div className="footer-links">
